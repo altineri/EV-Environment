@@ -66,8 +66,6 @@ class ElectricCarEnv(gym.Env):
     
     
     def terminated(self):
-        
-        #print(f'In terminated. D_log:{self.DayLog[self.day]}, E_Clog:{self.EConsLog[self.day]}, Y:{self.Y[self.day]}')
 
         
         if self.day < 365:
