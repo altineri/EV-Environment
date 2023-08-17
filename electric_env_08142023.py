@@ -14,12 +14,12 @@ from gym.utils import seeding
 #Second component is charging time: {1/4, 1/2, 1, 2,...., 12} --> size 14
 
 #Observation space: 0 --> Battery remaining capacity; 1 --> Energy capacity 
-#Energy capacity (remaining charge in kwh) is in [0, 60] continuous interval; Tank size (kwh) is in [0, 60] continuous interval
+#Energy capacity (remaining charge in kwh) is in [0, 60] continuous interval; Battert capacity (tank size in kwh) is in [0, 60] continuous interval
 
 #Energy consumption rate = 13 - 25.3 kwh per 100km uniform distribution; 100 km = 62.137 miles
 #0-12 hr staying at home at the end of the day with mod/median 10hr 
 #L1 daily change on battery capacity = 0.0002%; L2 daily change on battery capacity = 0.0004%;
-#DC fast change on battery capacity = 0.0006%; Extreme DC fast change on battery capacity = 0.001% of the battery capacity per day. Can compute hourly decrease and connect it with the staying at home hours (0-12hrs)
+#DC fast change on battery capacity = 0.0006%; Extreme DC fast change on battery capacity = 0.001% of the battery capacity per day. 
 #Data is from gamma distribution with: Gamma shape parameter --> 1.92; Gamma scale parameter --> 15.20 
 
 
